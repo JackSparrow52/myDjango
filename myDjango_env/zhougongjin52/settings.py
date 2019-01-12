@@ -23,10 +23,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '#%o_qn&&337o6%u*$8uhl$7zoi+^ai=7b0^@8(e+f_ub#c()zu'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['172.16.60.236', "www.zhougongjin52.top"]
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'statics')
 
 # Application definition
 
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+	'zhougongjin52',
 ]
 
 MIDDLEWARE = [
